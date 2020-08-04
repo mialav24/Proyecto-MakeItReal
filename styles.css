@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #57c1eb 0%, #246fa8 100%);
+    font-size: 20px;
+    height: 100vh;
+    color: #E3E8E8;
+}
+.channels {
+    height: 100%;
+    margin: auto;
+    padding-left: 1px;
+}
+
+.courses {
+    margin: 10px 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "# ";
+    color: #E3E8E8;
+    font-weight: bold;    
+}
+
+#container {
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 80%;
+    border-radius: 10px;
+    background-color: #19171d;
+}
+
+.chat-container {
+    width: 79%;
+    display: flex;
+    
+}
+
+.conversation-list {
+    width: 100%;
+}
+
+.conversation-active {
+    display: flex;       
+}
+
+img {
+    height: auto;
+    width: 15%;
+    border-radius: 10px;
+}
+
+.box-message {
+    display: flex;
+    flex-wrap: wrap;
+    width: 84.5%;
+}
+
+.name {
+    height: 25px;
+    margin-top: 2px;
+    width: auto;
+    margin: 1px;
+}
+
+.time-message {
+    margin-left: 10px;
+    font-size: 10px;
+    align-self: flex-start;
+    margin-top: 1px;
+
+}
+
+.message {
+    height: 30px;
+    width: 100%;
+    margin: 2px;
+}
+
+.type-message {
+    width: 300px;
+    height: auto;
+    background-color: #656769;
+}
+::placeholder, textarea {
+    color: white;
+    border-radius: 2px;
+    margin-left: 2px;
+}

@@ -6,47 +6,63 @@
     <title>Chat MakeItReal</title>
     <link href="styles.css" rel="stylesheet"/>
 </head>
-<body>
-    <ul class='channels'>
-        <li class="courses"></li>
-        <li class="courses"></li>
-        <li class="courses"></li>
-        <li class="courses"></li>
-        <li class="courses"></li>
-        <li class="courses"></li>
-    </ul>
-    <div class="chat-container">
-        <div class="user1">
-            <img src="" alt="Avatar">
-            <p></p>
-            <span class="time-message">11:00</span>
+<body style="border: 2px solid black;">
+    <section id="container" style="border: 2px solid red;">
+        <ul class='channels'>
+            <li class="courses">Courses</li>
+            <li class="courses">CSS</li>
+            <li class="courses">Ejercicios</li>
+            <li class="courses">General</li>
+            <li class="courses">Git</li>
+            <li class="courses">Javascript</li> 
+        </ul>
+        <div class="chat-container" style="border: 2px solid black;">
+            <div class="conversation-list">
+                <div class="conversation-active">
+                    <img src="centinela.jpg" alt="Avatar">
+                    <div class="box-message">
+                        <p class="name">Michael Alean Avila</p>
+                        <span class="time-message">00:00</span>
+                        <p class="message"> Mensaje de chat</p>
+                    </div>
+                </div>
+                <div class="conversation-active">
+                    <img src="centinela.jpg" alt="Avatar">
+                    <div class="box-message">
+                        <p class="name">Michael Alean Avila</p>
+                        <span class="time-message">00:00</span>
+                        <p class="message"> Mensaje de chat</p>
+                    </div>
+                </div>
+                <div class="conversation-active">
+                    <img src="centinela.jpg" alt="Avatar">
+                    <div class="box-message">
+                        <p class="name">Michael Alean Avila</p>
+                        <span class="time-message">00:00</span>
+                        <p class="message"> Mensaje de chat</p>
+                    </div>
+                </div>
+                <div class="conversation-active">
+                    <img src="centinela.jpg" alt="Avatar">
+                    <div class="box-message">
+                        <p class="name">Michael Alean Avila</p>
+                        <span class="time-message">00:00</span>
+                        <p class="message"> Mensaje de chat</p>
+                    </div>
+                </div>
+                <div class="conversation-active">
+                    <img src="centinela.jpg" alt="Avatar">
+                    <div class="box-message">
+                        <p class="name">Michael Alean Avila</p>
+                        <span class="time-message">00:00</span>
+                        <p class="message"> Mensaje de chat</p>
+                    </div>
+                </div>
+                <div class="chat-message">
+                    <textarea class="type-message" placeholder="Type message..." name="msg"></textarea>
+                </div>
+            </div>
         </div>
-        <div class="user2">
-            <img src="" alt="Avatar">
-            <p></p>
-            <span class="time-message">11:00</span>
-        </div>
-        <div class="user3">
-            <img src="" alt="Avatar">
-            <p></p>
-            <span class="time-message">11:00</span>
-        </div>
-        <div class="user4">
-            <img src="" alt="Avatar">
-            <p></p>
-            <span class="time-message">11:00</span>
-        </div>
-        <div class="user4">
-            <img src="" alt="Avatar">
-            <p></p>
-            <span class="time-message">11:00</span>
-        </div>
-        <textarea placeholder="Type message.." name="msg" required></textarea>
-        <button type="submit" class="btn">Send</button>
-        <button type="button" class="btn cancel"
-    </div>
-    
-        
-    
+    </section>    
 </body>
 </html>
