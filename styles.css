@@ -95,6 +95,11 @@ img {
 
 }
 
+.type-message {
+    width: 300px;
+    height: auto;
+    background-color: #656769;
+}
 .message {
     height: 30px;
     width: 100%;
@@ -102,11 +107,6 @@ img {
     margin-bottom: 9px;;
 }
 
-.type-message {
-    width: 300px;
-    height: auto;
-    background-color: #656769;
-}
 
 .chat-message{
     width: 90%;
