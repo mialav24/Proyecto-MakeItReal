@@ -12,9 +12,10 @@ body {
 .channels {
     height: 100%;
     padding-left: 5px;
-    width: 120px;
+    width: 100px;
     margin: 0px;
     border-right: 2px solid #4F5454;
+    flex-shrink: 0;
 }
 .courses:hover{
     background-color: bold;
@@ -60,10 +61,12 @@ ul li::before {
     width: 100%;
     margin-left: 5px;
     align-self: flex-end;
+    overflow: hidden;
 }
 
 .conversation-active {
-    display: flex;       
+    display: flex;
+    margin: 15px 0;      
 }
 
 img {
@@ -71,6 +74,7 @@ img {
     width: 7%;
     border-radius: 10px;
     padding: 2px;
+    flex-shrink: 0;
 }
 
 .box-message {
@@ -104,7 +108,14 @@ img {
     height: 30px;
     width: 100%;
     margin: 2px;
-    margin-bottom: 9px;;
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+
+p {
+    height: 95%;
+    width: 95%;
+    margin: 1px;
 }
 
 

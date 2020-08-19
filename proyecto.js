@@ -1,45 +1,76 @@
-/* const $chat = document.querySelector(".chat-container");
-const messages = [
+let today = new Date();
+let timeNow = today.getHours() + ":" + today.getMinutes();
+const $chat = document.querySelector(".js-chat-container");
+const $sendButton = document.querySelector(".js-send-button");
+const $textarea = document.querySelector(".js-textarea");
+ const messages = [
   {
-    time: '10:00',
-    content: 'Hola buenos dias',
+    time: timeNow,
+    content: 'Bueno días',
     author: {
-      name: 'Michael Alean',
-      image: 'Foto1.jpg'
+      name: 'Angelica Perez',
+      image: 'Foto3.png'
     },
   },
   {
     time: '10:01',
-    content: 'Qué tal como van',
+    content: 'Hola',
     author: {
-      name: 'Diego Ramon',
-      image: 'Foto2.jpg'
+      name: 'Carolina Perez',
+      image: 'Foto2.png'
     },
   },
   {
     time: '10:02',
-    content: 'Primero que todo, buenos dias',
+    content: '¿Qué tal?',
     author: {
-      name: 'Juan David Giraldo',
-      image: 'Foto3.jpg'
+      name: 'Michael Alean',
+      image: 'Foto1.png'
     },
   },
-];
+  ];
 
-function printMessage(message) {
+
+
+/* function printMessage(message) {
   const {author, time, content} = message
   const template = `<div class="conversation-active">
-  <img src="${author.image}">
+  <img src="${author.image}" alt="Avatar">
   <div class="box-message">
   <p class="name">${author.name}</p>
   <span class="time-message">${time}</span>
   <div class="message">
-  <p>${content}</p>
+  <p class="whote">${content}</p>
   </div>        
   </div>`;
-  $chat.innerHTML = template;
+  $chat.innerHTML += template;
 }
 
-for (let i = 0; i< messages.length; i++){
+
+ for (let i=0; i<messages.length; i++){
   printMessage(messages[i])
-} */
+}  */
+
+ const onSend = () => {
+  const textareaValue = $textarea.value;
+
+  if (textareaValue !== '') {
+    const template = `<div class="conversation-active">
+    <img src="Foto1.png" alt="Avatar">
+    <div class="box-message">
+    <p class="name">Michael Alean</p>
+    <span class="time-message">${timeNow}</span>
+    <div class="message">
+    <p>${textareaValue}</p>
+    </div>        
+    </div>`;
+    $chat.innerHTML += template;
+    $textarea.value = '';
+  } 
+}
+
+ $sendButton.addEventListener('click', onSend);
+
+
+
+
