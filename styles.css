@@ -8,6 +8,16 @@ body {
 
 #container {
     border: 2px solid black;
+    display: flex;
+    position: relative;
+    top: 10%;
+    left: 25%;
+    width: 50%;
+    height: 550px;
+    border-radius: 10px;
+    background-color: #3A3D3D;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 40px;
 }
 .channels {
     height: 100%;
@@ -38,22 +48,10 @@ ul li::before {
     font-weight: bold;    
 }
 
-#container {
-    display: flex;
-    position: relative;
-    top: 10%;
-    left: 25%;
-    width: 50%;
-    height: 80%;
-    border-radius: 10px;
-    background-color: #3A3D3D;
-    border-top-left-radius: 30px;
-    border-bottom-right-radius: 40px;
-}
-
 .chat-container {
     width: 95%;
     display: flex;
+    max-height: 550px;
     
 }
 
@@ -61,20 +59,25 @@ ul li::before {
     width: 100%;
     margin-left: 5px;
     align-self: flex-end;
-    overflow: hidden;
+    max-height: 550px; 
+    overflow-y: scroll;  
+}
+
+.conversations-container {
+    max-height: 98%;
 }
 
 .conversation-active {
     display: flex;
-    margin: 15px 0;      
+    margin: 15px 0;     
 }
 
 img {
-    height: auto;
     width: 7%;
     border-radius: 10px;
     padding: 2px;
-    flex-shrink: 0;
+    max-height: 50px;
+    
 }
 
 .box-message {
@@ -105,17 +108,18 @@ img {
     background-color: #656769;
 }
 .message {
-    height: 30px;
+    height: auto;
     width: 100%;
     margin: 2px;
     margin-bottom: 9px;
-    overflow: hidden;
+    
 }
 
 p {
-    height: 95%;
+    height: auto;
     width: 95%;
     margin: 1px;
+    word-break: break-all;
 }
 
 

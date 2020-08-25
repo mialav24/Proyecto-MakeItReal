@@ -29,9 +29,6 @@ const $textarea = document.querySelector(".js-textarea");
     },
   },
   ];
-
-
-
 /* function printMessage(message) {
   const {author, time, content} = message
   const template = `<div class="conversation-active">
@@ -40,7 +37,7 @@ const $textarea = document.querySelector(".js-textarea");
   <p class="name">${author.name}</p>
   <span class="time-message">${time}</span>
   <div class="message">
-  <p class="whote">${content}</p>
+  <p>${content}</p>
   </div>        
   </div>`;
   $chat.innerHTML += template;
@@ -51,7 +48,7 @@ const $textarea = document.querySelector(".js-textarea");
   printMessage(messages[i])
 }  */
 
- const onSend = () => {
+ function onSend () {
   const textareaValue = $textarea.value;
 
   if (textareaValue !== '') {
@@ -71,6 +68,16 @@ const $textarea = document.querySelector(".js-textarea");
 
  $sendButton.addEventListener('click', onSend);
 
+ const url = 'https://jsonplaceholder.typicode.com/comments'
+ const http = new XMLHttpRequest()
+ http.open("GET", url)
+ http.onreadystatechange = function(){
+
+    if(this.readyState == 4 && this.status == 200){
+        var resultado = JSON.parse(this.responseText)
+        console.log(resultado.name)
+    }
+}
 
 
 
